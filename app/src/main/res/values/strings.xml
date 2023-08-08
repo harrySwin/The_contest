@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">The contest</string>
+    <string name="home_score">Home Score</string>
+    <string name="away_score">Away Score</string>
+    <string name="reset">Reset</string>
+    <string name="home_wins">Home Team Wins!!!</string>
+    <string name="away_wins">Away Team Wins!!!</string>
 </resources>

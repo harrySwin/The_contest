@@ -53,10 +53,15 @@ class MainActivity : AppCompatActivity() {
 
 
         if (savedInstanceState != null) {
-            homeDisplay.text = (savedInstanceState.getInt("HOMESCORE")).toString()
-            Toast.makeText(baseContext,homeDisplay.text.toString(), Toast.LENGTH_SHORT).show()
-            awayDisplay.text = (savedInstanceState.getInt("AWAYSCORE")).toString()
-            Toast.makeText(baseContext,awayDisplay.text.toString(), Toast.LENGTH_SHORT).show()
+            homeScore = savedInstanceState.getInt("HOMESCORE")
+            homeDisplay.text = homeScore.toString()
+            Toast.makeText(baseContext,homeScore.toString(), Toast.LENGTH_SHORT).show()
+            Log.i("LIFECYCLE","restoredSavedInstnace $homeScore")
+
+            awayScore = savedInstanceState.getInt("AWAYSCORE")
+            awayDisplay.text = awayScore.toString()
+            Toast.makeText(baseContext,awayScore.toString(), Toast.LENGTH_SHORT).show()
+            Log.i("LIFECYCLE","restoredSavedInstnace $awayScore")
         }
 
         //When home team scores
@@ -88,14 +93,14 @@ class MainActivity : AppCompatActivity() {
         if (homeScore == 15) {
             var homeWinSound = MediaPlayer.create(this,R.raw.homewin)
             homeWinSound.start()
-            Toast.makeText(this,"Home Team Wins!!!",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,getResources().getString(R.string.home_wins),Toast.LENGTH_SHORT).show()
             reset()
             return true
         }
         if (awayScore == 15) {
             var awayWinSound = MediaPlayer.create(this,R.raw.awaywin)
             awayWinSound.start()
-            Toast.makeText(this,"Away Team Wins!!!",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,getResources().getString(R.string.away_wins),Toast.LENGTH_SHORT).show()
             reset()
             return true
         }

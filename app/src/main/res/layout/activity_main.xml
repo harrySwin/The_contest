@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Reset" />
+            android:text="@string/reset" />
     </LinearLayout>
 
     <LinearLayout
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginRight="10dp"
-            android:text="Home Score" />
+            android:text="@string/home_score"/>
 
         <Button
             android:id="@+id/awayScored"
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
-            android:text="Away Score" />
+            android:text="@string/away_score" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

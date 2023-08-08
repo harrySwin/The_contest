@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">La compétition</string>
+    <string name="home_score">Score à domicile</string>
+    <string name="away_score">Score à l\'extérieur</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="home_wins">L\'équipe à domicile gagne !!!</string>
+    <string name="away_wins">L\'équipe à l\'extérieur gagne !!!</string>
+</resources>
